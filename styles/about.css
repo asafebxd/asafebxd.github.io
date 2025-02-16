@@ -1,0 +1,44 @@
+/* Container to center content */
+.about {
+  max-width: 1200px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+/* About section styling */
+.about_section {
+  margin-top: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  padding: 1.5rem 0;
+}
+
+/* Title styling */
+.title {
+  font-size: 1.7rem; /* Equivalent to text-4xl */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff; /* Add your primary color */
+}
+
+/* Paragraph styling */
+.description {
+  font-size: 1rem; /* Equivalent to text-base */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  /* Equivalent to md: */
+  .about-section {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .description {
+    font-size: 1.125rem; /* Equivalent to lg:text-lg */
+  }
+}

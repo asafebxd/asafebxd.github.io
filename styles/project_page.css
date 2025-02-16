@@ -1,0 +1,16 @@
+.info_flex {
+  max-width: 1000px;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 10rem;
+  line-height: 1.6;
+  display: flex;
+}
+
+.info_flex img {
+  max-width: 500px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  height: 250px;
+  margin-right: 30px;
+}

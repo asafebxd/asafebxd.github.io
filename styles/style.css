@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(57, 108, 55, 1) 0%,
+    rgba(32, 41, 177, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(6, 7, 32, 1) 55%,
+    rgba(0, 0, 1, 1) 100%,
+    rgba(21, 110, 173, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-family: "Ubuntu", serif;
+  color: #fff;
+  /* overflow: hidden; */
+}
+
+@keyframes enter-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section_animation {
+    animation: enter-animation 0.8s 1;
+  }
+}
