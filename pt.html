@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Asafe Alves is a full-stack developer building platforms, APIs, and operational automations."
+      content="Asafe Alves é um desenvolvedor full-stack que cria plataformas, APIs e automações operacionais."
     />
     <meta name="theme-color" content="#151a20" />
-    <title>Asafe Alves — Full-Stack Developer</title>
+    <title>Asafe Alves — Desenvolvedor Full-Stack</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -58,15 +58,12 @@
         html {
           @apply scroll-smooth;
         }
-
         body {
           @apply bg-canvas font-sans leading-relaxed text-ink antialiased;
         }
-
         :focus-visible {
           @apply outline-2 outline-offset-4 outline-focus;
         }
-
         ::selection {
           @apply bg-signal text-canvas;
         }
@@ -76,97 +73,74 @@
         .site-shell {
           @apply mx-auto w-[calc(100%-2rem)] max-w-[1180px] sm:w-[calc(100%-3rem)] lg:w-[calc(100%-4rem)];
         }
-
         .skip-link {
           @apply fixed left-3 top-3 z-50 -translate-y-[160%] rounded-md bg-signal-soft px-3 py-2 text-sm text-canvas transition-transform focus:translate-y-0;
         }
-
         .eyebrow {
           @apply mb-5 font-mono text-[11px] font-medium uppercase tracking-[0.1em] text-signal-soft;
         }
-
         .button {
           @apply inline-flex min-h-11 items-center justify-center gap-3 rounded-full border border-transparent px-5 py-3 font-mono text-xs font-medium transition duration-200 hover:-translate-y-0.5;
         }
-
         .button-primary {
           @apply bg-signal text-[#07101b] hover:bg-signal-soft;
         }
-
         .button-secondary {
           @apply border-line bg-transparent text-ink hover:border-signal hover:text-signal-soft;
         }
-
         .nav-link {
           @apply relative py-5 font-mono text-[10px] uppercase tracking-[0.08em] text-muted transition duration-200 hover:text-ink sm:text-xs md:py-[22px];
         }
-
         .nav-link::after {
           content: "";
           @apply absolute inset-x-0 bottom-2.5 h-px origin-left scale-x-0 bg-signal transition-transform duration-200;
         }
-
         .nav-link:hover::after,
         .nav-link.is-active::after {
           @apply scale-x-100;
         }
-
         .project-card {
           @apply min-w-0 overflow-hidden rounded-[14px] border border-line bg-panel transition duration-200 hover:-translate-y-1 hover:border-signal hover:bg-[#202a35];
         }
-
         .project-trigger {
           @apply block h-full w-full cursor-pointer bg-transparent p-0 text-left text-inherit;
         }
-
         .project-visual {
           @apply relative flex min-h-[208px] flex-col justify-between overflow-hidden border-b border-line p-6;
         }
-
         .project-meta {
           @apply mb-4 flex flex-wrap justify-between gap-2 font-mono text-[10px] uppercase tracking-[0.05em] text-muted;
         }
-
         .project-meta span:first-child {
           @apply text-signal-soft;
         }
-
         .tag {
           @apply rounded border border-line px-2 py-1 font-mono text-[10px] text-muted;
         }
-
         .project-action {
           @apply inline-flex items-center gap-2 font-mono text-[11px] text-ink;
         }
-
         .project-action span {
           @apply text-signal-soft transition duration-200;
         }
-
         .project-card:hover .project-action span {
           @apply -translate-y-0.5 translate-x-1;
         }
-
         .project-dialog {
           @apply w-[min(640px,calc(100%-2rem))] rounded-[18px] border border-line bg-elevated p-0 text-ink shadow-[0_24px_100px_rgba(0,0,0,0.45)];
         }
-
         .project-dialog::backdrop {
           @apply bg-black/80 backdrop-blur-sm;
         }
-
         .dialog-close {
           @apply grid h-11 w-11 shrink-0 place-items-center rounded-full border border-line bg-transparent text-2xl leading-none text-copy transition duration-200 hover:border-signal hover:text-signal-soft;
         }
-
         .dialog-details span {
           @apply mb-2 block font-mono text-[9px] uppercase tracking-[0.05em] text-muted;
         }
-
         .dialog-details strong {
           @apply block text-xs font-medium text-ink;
         }
-
         .dialog-link[hidden] {
           @apply hidden;
         }
@@ -176,7 +150,6 @@
         html {
           scroll-behavior: auto;
         }
-
         *,
         *::before,
         *::after {
@@ -189,18 +162,18 @@
     </style>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+    <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
 
     <header
       class="sticky top-0 z-40 border-b border-line/60 bg-canvas/90 backdrop-blur-md"
     >
       <div
-        class="site-shell flex min-h-[60px] items-center justify-between gap-6 md:min-h-[68px]"
+        class="site-shell flex min-h-[60px] items-center justify-between gap-3 md:min-h-[68px] md:gap-6"
       >
         <a
           class="inline-flex items-center gap-3 font-mono text-[10px] font-semibold tracking-[0.12em] sm:text-xs"
           href="#top"
-          aria-label="Asafe Alves home"
+          aria-label="Página inicial de Asafe Alves"
         >
           <span
             class="grid h-[30px] w-[30px] place-items-center rounded-[5px] bg-signal text-[11px] tracking-[-0.08em] text-canvas"
@@ -209,26 +182,26 @@
           <span>ASAFE ALVES</span>
         </a>
         <nav
-          class="flex items-center gap-4 sm:gap-8"
-          aria-label="Main navigation"
+          class="flex items-center gap-3 sm:gap-6"
+          aria-label="Navegação principal"
         >
-          <a class="nav-link is-active" href="#work">Work</a>
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link is-active" href="#work">Projetos</a>
+          <a class="nav-link" href="#about">Sobre</a>
+          <a class="nav-link" href="#contact">Contato</a>
         </nav>
         <div
           class="flex items-center rounded-full border border-line p-1 font-mono text-[10px]"
-          aria-label="Language selector"
+          aria-label="Seletor de idioma"
         >
           <a
-            class="rounded-full bg-signal px-2 py-1.5 text-canvas"
+            class="rounded-full px-2 py-1.5 text-muted transition hover:text-ink"
             href="index.html"
-            aria-current="page"
             >EN</a
           >
           <a
-            class="rounded-full px-2 py-1.5 text-muted transition hover:text-ink"
+            class="rounded-full bg-signal px-2 py-1.5 text-canvas"
             href="pt.html"
+            aria-current="page"
             >PT</a
           >
         </div>
@@ -245,50 +218,47 @@
           class="max-w-[700px] motion-safe:animate-rise-in motion-reduce:animate-none"
         >
           <p class="eyebrow">
-            <span>Full-stack developer</span> <span class="text-muted">/</span>
-            <span>Santos, BR</span>
+            Desenvolvedor full-stack <span class="text-muted">/</span> Santos,
+            BR
           </p>
           <h1
             class="mb-7 max-w-[720px] font-display text-[clamp(3rem,16vw,5rem)] font-bold leading-[0.93] tracking-[-0.07em] md:text-[clamp(4rem,7.6vw,7rem)]"
             id="hero-title"
           >
-            <span>I build reliable digital products for real operations.</span>
+            Eu crio produtos digitais confiáveis para operações reais.
           </h1>
           <p class="mb-8 max-w-[54ch] text-[15px] text-copy md:text-[17px]">
-            <span
-              >Platforms, APIs, and automations that turn complex workflows into
-              calmer, more useful software.</span
-            >
+            Plataformas, APIs e automações que transformam fluxos complexos em
+            software mais simples e útil.
           </p>
           <div class="flex flex-wrap gap-3">
             <a class="button button-primary" href="#work"
-              ><span>View selected work</span>
-              <span aria-hidden="true">↘</span></a
+              >Ver projetos selecionados <span aria-hidden="true">↘</span></a
             >
             <a
               class="button button-secondary"
               href="mailto:alves.asafecabral@gmail.com"
-              ><span>Let's talk</span> <span aria-hidden="true">↗</span></a
+              >Vamos conversar <span aria-hidden="true">↗</span></a
             >
           </div>
         </div>
 
         <div
           class="overflow-hidden rounded-[14px] border border-line bg-elevated shadow-[20px_30px_80px_rgba(0,0,0,0.16)] motion-safe:animate-rise-in motion-reduce:animate-none lg:rotate-[1.5deg]"
-          aria-label="Asafe's current toolkit"
+          aria-label="Ferramentas atuais de Asafe"
         >
           <div
             class="flex min-h-[45px] items-center gap-3.5 border-b border-line px-[17px] font-mono text-[11px] text-muted"
           >
             <div class="flex gap-[5px]" aria-hidden="true">
-              <span class="h-[7px] w-[7px] rounded-full bg-[#d77c83]"></span>
-              <span class="h-[7px] w-[7px] rounded-full bg-[#d5b36b]"></span>
-              <span class="h-[7px] w-[7px] rounded-full bg-success"></span>
+              <span class="h-[7px] w-[7px] rounded-full bg-[#d77c83]"></span
+              ><span class="h-[7px] w-[7px] rounded-full bg-[#d5b36b]"></span
+              ><span class="h-[7px] w-[7px] rounded-full bg-success"></span>
             </div>
             <span>asafe@work:~</span>
             <span class="ml-auto inline-flex items-center gap-1.5 text-success"
               ><i class="h-1.5 w-1.5 rounded-full bg-success"></i>
-              <span>available</span></span
+              disponível</span
             >
           </div>
           <div
@@ -297,12 +267,12 @@
             <p class="mb-3">
               <span class="mr-2 text-signal-soft">$</span> whoami
             </p>
-            <p class="mb-3 pl-[21px] text-copy">full-stack developer</p>
+            <p class="mb-3 pl-[21px] text-copy">desenvolvedor full-stack</p>
             <p class="mb-3">
               <span class="mr-2 text-signal-soft">$</span> focus --today
             </p>
             <p class="mb-3 pl-[21px] text-copy">
-              platforms / APIs / automation
+              plataformas / APIs / automação
             </p>
             <p class="mb-3">
               <span class="mr-2 text-signal-soft">$</span> stack --core
@@ -315,10 +285,10 @@
               PostgreSQL · TypeORM · AWS S3
             </p>
             <p class="mb-3 pl-[21px] text-copy">
-              Jest · unit and integration tests · TDD · EDD
+              Jest · testes unitários e de integração · TDD · EDD
             </p>
             <p class="mb-3 pl-[21px] text-copy">
-              Meta WhatsApp API · Evolution API
+              n8n · HubSpot · Meta WhatsApp API · Evolution API
             </p>
             <p class="pl-[21px] text-copy">
               Docker · GitHub Actions · Git · Agile · Scrum
@@ -342,18 +312,17 @@
           class="mb-8 flex flex-col items-start justify-between gap-5 md:mb-11 md:flex-row md:items-end md:gap-10"
         >
           <div>
-            <p class="eyebrow">selected work</p>
+            <p class="eyebrow">projetos selecionados</p>
             <h2
               class="mb-0 max-w-[650px] font-display text-[clamp(2.25rem,7vw,4.3rem)] leading-[0.98] tracking-[-0.06em]"
               id="work-title"
             >
-              <span>Systems I helped bring to life.</span>
+              Sistemas que ajudei a construir.
             </h2>
           </div>
           <p class="mb-0 max-w-[29ch] font-mono text-xs text-muted">
-            <span
-              >A mix of private professional platforms and public builds.</span
-            >
+            Uma mistura de plataformas profissionais privadas e projetos
+            públicos.
           </p>
         </div>
 
@@ -361,11 +330,11 @@
           <article
             class="project-card md:col-span-2 lg:col-span-6"
             data-project="portal"
-            data-dialog-meta="Private case study / platform"
-            data-dialog-contribution="Full-stack platform work"
-            data-dialog-stack="Next.js · PostgreSQL · Asaas API · Jest · Integrations"
-            data-dialog-access="Live site / private source"
-            data-dialog-description="A client and operations platform for managing people, documents, payments, signatures, and communication workflows. Features include client records, document handling, payment and subscription tracking, and operational communication flows. Built with Next.js, PostgreSQL, Asaas API, Jest, and integrations."
+            data-dialog-meta="Estudo de caso privado / plataforma"
+            data-dialog-contribution="Desenvolvimento full-stack da plataforma"
+            data-dialog-stack="Next.js · PostgreSQL · Asaas API · Jest · Integrações"
+            data-dialog-access="Fonte privada"
+            data-dialog-description="Uma plataforma de clientes e operações para gerenciar pessoas, documentos, pagamentos, assinaturas e fluxos de comunicação. Os recursos incluem cadastro de clientes, gestão de documentos, acompanhamento de pagamentos e assinaturas e fluxos operacionais de comunicação. Construída com Next.js, PostgreSQL, Asaas API, Jest e integrações."
           >
             <button
               class="project-trigger"
@@ -384,23 +353,21 @@
                 >
                   <span
                     class="mx-auto mt-6 block h-1 w-1/2 rounded bg-signal"
-                  ></span>
-                  <span
+                  ></span
+                  ><span
                     class="mx-auto mt-5 block h-1 w-1/2 rounded bg-signal-soft/40"
-                  ></span>
-                  <span
+                  ></span
+                  ><span
                     class="mx-auto mt-5 block h-1 w-1/2 rounded bg-signal-soft/20"
-                  ></span>
-                  <span
-                    class="mx-auto mt-12 block h-1 w-1/3 rounded bg-signal-soft/25"
                   ></span>
                 </div>
                 <div class="absolute left-1/4 right-6 top-[62px] z-10">
                   <span
                     class="font-mono text-[10px] uppercase tracking-[0.08em] text-signal-soft"
-                    ><span>Operations overview</span></span
-                  >
-                  <span class="mt-3 block h-2 w-[55%] rounded bg-ink/25"></span>
+                    >Visão geral das operações</span
+                  ><span
+                    class="mt-3 block h-2 w-[55%] rounded bg-ink/25"
+                  ></span>
                   <div class="mt-7 grid grid-cols-3 gap-2">
                     <span
                       class="h-14 rounded border border-signal-soft/25 bg-signal/10"
@@ -419,8 +386,8 @@
               </div>
               <div class="p-6">
                 <div class="project-meta">
-                  <span>Private case study</span
-                  ><span>Platform / operations</span>
+                  <span>Estudo de caso privado</span
+                  ><span>Plataforma / operações</span>
                 </div>
                 <h3
                   class="mb-2 font-display text-[clamp(1.6rem,4vw,2.25rem)] leading-[1.05] tracking-[-0.045em]"
@@ -428,19 +395,18 @@
                   Portal Gioppo &amp; Conti
                 </h3>
                 <p class="mb-5 min-h-[50px] text-sm text-copy">
-                  A client and operations platform for managing people,
-                  documents, payments, signatures, and communication workflows.
+                  Uma plataforma de clientes e operações para gerenciar pessoas,
+                  documentos, pagamentos, assinaturas e fluxos de comunicação.
                 </p>
                 <div class="mb-6 flex flex-wrap gap-2">
                   <span class="tag">Next.js</span
                   ><span class="tag">PostgreSQL</span
                   ><span class="tag">Asaas API</span
                   ><span class="tag">Jest</span
-                  ><span class="tag">Integrations</span>
+                  ><span class="tag">Integrações</span>
                 </div>
                 <span class="project-action"
-                  ><span>Read case study</span>
-                  <span aria-hidden="true">↗</span></span
+                  >Ler estudo de caso <span aria-hidden="true">↗</span></span
                 >
               </div>
             </button>
@@ -449,12 +415,12 @@
           <article
             class="project-card md:col-span-2 lg:col-span-6"
             data-project="workbench"
-            data-dialog-meta="Private case study / CRM"
-            data-dialog-contribution="API, data, and frontend work"
+            data-dialog-meta="Estudo de caso privado / CRM"
+            data-dialog-contribution="Desenvolvimento de API, dados e frontend"
             data-dialog-stack="NestJS · TypeScript · PostgreSQL · JWT"
-            data-dialog-access="Live site / private source"
+            data-dialog-access="Site público / fonte privada"
             data-dialog-url="https://www.digitalworkbench.com.br/"
-            data-dialog-description="A multi-tenant CRM workspace for managing clients, leads, projects, installments, users, and team workflows. Features include tenant data separation, lead and project management, installment tracking, user access, and collaborative workflow views. Built with NestJS, TypeScript, PostgreSQL, and JWT authentication."
+            data-dialog-description="Um espaço de CRM multi-tenant para gerenciar clientes, leads, projetos, parcelas, usuários e fluxos de trabalho em equipe. Os recursos incluem separação de dados por tenant, gestão de leads e projetos, acompanhamento de parcelas, controle de usuários e visões de trabalho colaborativas. Construído com NestJS, TypeScript, PostgreSQL e autenticação JWT."
           >
             <button
               class="project-trigger"
@@ -467,21 +433,18 @@
                   class="absolute inset-0 z-20 h-full w-full object-cover object-center"
                   src="images/digitalworkbench.png"
                   alt=""
-                />
-                <span
+                /><span
                   class="relative z-10 font-mono text-[10px] uppercase tracking-[0.08em] text-signal-soft"
                   >Digital Workbench</span
                 >
                 <div class="relative z-10 mt-10 grid grid-cols-3 gap-2">
                   <span
                     class="h-[74px] overflow-hidden rounded border border-white/20 bg-white/5"
-                    ><i class="block h-2 bg-signal-soft/40"></i
-                  ></span>
-                  <span
+                    ><i class="block h-2 bg-signal-soft/40"></i></span
+                  ><span
                     class="h-[74px] overflow-hidden rounded border border-white/20 bg-white/5"
-                    ><i class="block h-2 bg-success/80"></i
-                  ></span>
-                  <span
+                    ><i class="block h-2 bg-success/80"></i></span
+                  ><span
                     class="h-[74px] overflow-hidden rounded border border-white/20 bg-white/5"
                     ><i class="block h-2 bg-[#d77c83]/80"></i
                   ></span>
@@ -494,7 +457,7 @@
               </div>
               <div class="p-6">
                 <div class="project-meta">
-                  <span>Private case study</span><span>CRM / SaaS</span>
+                  <span>Estudo de caso privado</span><span>CRM / SaaS</span>
                 </div>
                 <h3
                   class="mb-2 font-display text-[clamp(1.6rem,4vw,2.25rem)] leading-[1.05] tracking-[-0.045em]"
@@ -502,8 +465,8 @@
                   Digital Workbench
                 </h3>
                 <p class="mb-5 min-h-[50px] text-sm text-copy">
-                  A multi-tenant CRM workspace for clients, leads, projects,
-                  installments, users, and team workflows.
+                  Um espaço de CRM multi-tenant para clientes, leads, projetos,
+                  parcelas, usuários e fluxos de trabalho em equipe.
                 </p>
                 <div class="mb-6 flex flex-wrap gap-2">
                   <span class="tag">NestJS</span
@@ -512,8 +475,7 @@
                   ><span class="tag">JWT</span>
                 </div>
                 <span class="project-action"
-                  ><span>Read case study</span>
-                  <span aria-hidden="true">↗</span></span
+                  >Ler estudo de caso <span aria-hidden="true">↗</span></span
                 >
               </div>
             </button>
@@ -522,12 +484,12 @@
           <article
             class="project-card md:col-span-2 lg:col-span-6"
             data-project="dineflow"
-            data-dialog-meta="Public build / commerce"
-            data-dialog-contribution="Full-stack application"
+            data-dialog-meta="Projeto público / comércio"
+            data-dialog-contribution="Aplicação full-stack"
             data-dialog-stack="Next.js · Prisma · PostgreSQL · Stripe"
-            data-dialog-access="Public source"
+            data-dialog-access="Fonte pública"
             data-dialog-url="https://fsw-donald-s.vercel.app/"
-            data-dialog-description="A restaurant self-service ordering platform with menu browsing, dine-in or takeaway selection, cart and order state, checkout handoff, and Stripe payment integration. Built with Next.js, Prisma, PostgreSQL, and Stripe."
+            data-dialog-description="Uma plataforma de autoatendimento para restaurantes com navegação pelo cardápio, escolha entre consumo no local ou para viagem, carrinho, acompanhamento do pedido, encaminhamento para checkout e integração de pagamento com Stripe. Construída com Next.js, Prisma, PostgreSQL e Stripe."
           >
             <button
               class="project-trigger"
@@ -548,30 +510,30 @@
                 </div>
                 <span
                   class="relative z-10 font-mono text-[10px] uppercase tracking-[0.08em] text-signal-soft"
-                  ><span>choose your flow</span></span
+                  >escolha seu fluxo</span
                 >
                 <div class="relative z-10 flex gap-2">
                   <span
                     class="rounded border border-[#f5d67e]/40 px-3 py-2 font-mono text-[9px] uppercase text-[#f5d67e]"
-                    ><span>eat in</span></span
+                    >consumir no local</span
                   ><span
                     class="rounded border border-[#f5d67e]/40 px-3 py-2 font-mono text-[9px] uppercase text-[#f5d67e]"
-                    ><span>take away</span></span
+                    >para viagem</span
                   >
                 </div>
               </div>
               <div class="p-6">
                 <div class="project-meta">
-                  <span>Public build</span><span>Commerce</span>
+                  <span>Projeto público</span><span>Comércio</span>
                 </div>
                 <h3
                   class="mb-2 font-display text-[clamp(1.6rem,4vw,2.25rem)] leading-[1.05] tracking-[-0.045em]"
                 >
-                  Restaurant Self-Service Ordering Platform
+                  Plataforma de Autoatendimento para Restaurantes
                 </h3>
                 <p class="mb-5 min-h-[50px] text-sm text-copy">
-                  A restaurant self-service ordering flow with menus, cart
-                  state, orders, and payment handoff.
+                  Uma experiência de autoatendimento para restaurantes com
+                  cardápio, carrinho, pedidos e encaminhamento para pagamento.
                 </p>
                 <div class="mb-6 flex flex-wrap gap-2">
                   <span class="tag">Next.js</span><span class="tag">Prisma</span
@@ -579,8 +541,7 @@
                   ><span class="tag">Stripe</span>
                 </div>
                 <span class="project-action"
-                  ><span>View project</span>
-                  <span aria-hidden="true">↗</span></span
+                  >Ver projeto <span aria-hidden="true">↗</span></span
                 >
               </div>
             </button>
@@ -589,12 +550,12 @@
           <article
             class="project-card md:col-span-2 lg:col-span-6"
             data-project="sealtrack"
-            data-dialog-meta="Public build / full-stack CRUD"
-            data-dialog-contribution="Full-stack application"
+            data-dialog-meta="Projeto público / CRUD full-stack"
+            data-dialog-contribution="Aplicação full-stack"
             data-dialog-stack="React · Express · MongoDB"
-            data-dialog-access="Public source"
+            data-dialog-access="Fonte pública"
             data-dialog-url="https://github.com/asafebxd/teste-tecnico-fractal"
-            data-dialog-description="A searchable locker and seal management system with record creation, code-based search, filtering, validation, status tracking, and tested API flows. Built with React, Express, and MongoDB."
+            data-dialog-description="Um sistema pesquisável de gestão de armários e lacres com cadastro de registros, busca por código, filtros, validação, acompanhamento de status e fluxos de API. Construído com React, Express e MongoDB."
           >
             <button
               class="project-trigger"
@@ -607,45 +568,43 @@
                   class="absolute inset-0 z-20 h-full w-full object-cover"
                   src="images/Lockers.png"
                   alt=""
-                />
-                <span
+                /><span
                   class="absolute left-6 top-[52px] h-[104px] w-[104px] rounded-full border-[12px] border-[#f5d67e]/80 shadow-[inset_0_0_0_2px_#3a3025,0_0_0_4px_rgba(245,214,126,0.2)]"
-                ></span>
-                <span
+                ></span
+                ><span
                   class="relative z-10 mt-[85px] self-end font-mono text-xl font-semibold text-[#f5d67e]"
                   >LK-2048</span
-                >
-                <span
+                ><span
                   class="relative z-10 font-mono text-[10px] uppercase tracking-[0.08em] text-signal-soft"
-                  ><span>locker registry</span></span
+                  >registro de armários</span
                 >
                 <div
                   class="relative z-10 flex justify-between rounded border border-[#f5d67e]/30 px-3 py-2 font-mono text-[10px] text-white/60"
                 >
-                  <span>search by code...</span
+                  <span>buscar por código...</span
                   ><b class="text-base leading-[10px] text-[#f5d67e]">⌕</b>
                 </div>
               </div>
               <div class="p-6">
                 <div class="project-meta">
-                  <span>Public build</span><span>Full-stack CRUD</span>
+                  <span>Projeto público</span><span>CRUD full-stack</span>
                 </div>
                 <h3
                   class="mb-2 font-display text-[clamp(1.6rem,4vw,2.25rem)] leading-[1.05] tracking-[-0.045em]"
                 >
-                  Locker and Seal Management System
+                  Sistema de Gestão de Armários e Lacres
                 </h3>
                 <p class="mb-5 min-h-[50px] text-sm text-copy">
-                  A searchable locker and seal system with validation,
-                  filtering, and tested API flows.
+                  Um sistema de gestão de armários e lacres pesquisável por
+                  código, com filtros, validação, acompanhamento de status e
+                  fluxos de API testados.
                 </p>
                 <div class="mb-6 flex flex-wrap gap-2">
                   <span class="tag">React</span><span class="tag">Express</span
                   ><span class="tag">MongoDB</span>
                 </div>
                 <span class="project-action"
-                  ><span>View project</span>
-                  <span aria-hidden="true">↗</span></span
+                  >Ver projeto <span aria-hidden="true">↗</span></span
                 >
               </div>
             </button>
@@ -654,12 +613,12 @@
           <article
             class="project-card md:col-span-2 lg:col-span-6"
             data-project="automatekit"
-            data-dialog-meta="Public build / automation"
-            data-dialog-contribution="Automation and test suite"
+            data-dialog-meta="Projeto público / automação"
+            data-dialog-contribution="Automação e suíte de testes"
             data-dialog-stack="Playwright · Docker · PDF · Jest"
-            data-dialog-access="Public source"
+            data-dialog-access="Fonte pública"
             data-dialog-url="https://github.com/asafebxd/Junior-BackEnd-Quest-v1.1.2---Must-Company"
-            data-dialog-description="A browser automation and document-processing suite with crawling flows, PDF workflows, translation, file delivery, and automated end-to-end coverage. Built with Playwright, Docker, PDF tooling, and Jest."
+            data-dialog-description="Uma suíte de automação de navegador e processamento de documentos com fluxos de crawling, processamento de PDFs, tradução, entrega de arquivos e cobertura automatizada ponta a ponta. Construída com Playwright, Docker, ferramentas de PDF e Jest."
           >
             <button
               class="project-trigger"
@@ -672,25 +631,24 @@
                   class="absolute inset-0 z-20 h-full w-full object-cover"
                   src="images/Playwright.png"
                   alt=""
-                />
-                <span
+                /><span
                   class="relative z-10 font-mono text-[10px] uppercase tracking-[0.08em] text-signal-soft"
-                  ><span>automation pipeline</span></span
+                  >pipeline de automação</span
                 >
                 <div
                   class="relative z-10 mt-9 flex items-center justify-between gap-2 font-mono text-[10px] uppercase text-signal-soft"
                 >
                   <span
                     class="rounded border border-signal-soft/30 bg-signal/10 px-2 py-2"
-                    ><span>crawl</span></span
+                    >coletar</span
                   ><i class="text-signal not-italic">→</i
                   ><span
                     class="rounded border border-signal-soft/30 bg-signal/10 px-2 py-2"
-                    ><span>process</span></span
+                    >processar</span
                   ><i class="text-signal not-italic">→</i
                   ><span
                     class="rounded border border-signal-soft/30 bg-signal/10 px-2 py-2"
-                    ><span>ship</span></span
+                    >entregar</span
                   >
                 </div>
                 <div
@@ -701,16 +659,17 @@
               </div>
               <div class="p-6">
                 <div class="project-meta">
-                  <span>Public build</span><span>Automation</span>
+                  <span>Projeto público</span><span>Automação</span>
                 </div>
                 <h3
                   class="mb-2 font-display text-[clamp(1.6rem,4vw,2.25rem)] leading-[1.05] tracking-[-0.045em]"
                 >
-                  Browser Automation and Document Processing Suite
+                  Suíte de Automação de Navegador e Documentos
                 </h3>
                 <p class="mb-5 min-h-[50px] text-sm text-copy">
-                  A browser automation and document-processing toolkit for
-                  crawling, PDFs, translation, and tests.
+                  Uma suíte de automação de navegador e processamento de
+                  documentos para crawling, PDFs, tradução e testes
+                  automatizados.
                 </p>
                 <div class="mb-6 flex flex-wrap gap-2">
                   <span class="tag">Playwright</span
@@ -718,8 +677,7 @@
                   ><span class="tag">Jest</span>
                 </div>
                 <span class="project-action"
-                  ><span>View project</span>
-                  <span aria-hidden="true">↗</span></span
+                  >Ver projeto <span aria-hidden="true">↗</span></span
                 >
               </div>
             </button>
@@ -728,12 +686,12 @@
           <article
             class="project-card md:col-span-2 lg:col-span-6"
             data-project="roomline"
-            data-dialog-meta="Public build / real-time web"
-            data-dialog-contribution="Full-stack application"
+            data-dialog-meta="Projeto público / web em tempo real"
+            data-dialog-contribution="Aplicação full-stack"
             data-dialog-stack="React · Express · PostgreSQL · Socket.IO"
-            data-dialog-access="Public source"
+            data-dialog-access="Fonte pública"
             data-dialog-url="https://github.com/asafebxd/MessageWebApp"
-            data-dialog-description="A real-time room-based messaging platform with room creation and joining, persistent messages, unread states, member presence, typing indicators, and live updates over Socket.IO. Built with React, Express, PostgreSQL, and Socket.IO."
+            data-dialog-description="Uma plataforma de mensagens em tempo real baseada em salas, com criação e entrada em salas, mensagens persistentes, estados de não lidas, presença de membros, indicador de digitação e atualizações ao vivo via Socket.IO. Construída com React, Express, PostgreSQL e Socket.IO."
           >
             <button
               class="project-trigger"
@@ -746,10 +704,9 @@
                   class="absolute inset-0 z-20 h-full w-full object-cover object-center"
                   src="images/Roomline.png"
                   alt=""
-                />
-                <span
+                /><span
                   class="relative z-10 font-mono text-[10px] uppercase tracking-[0.08em] text-signal-soft"
-                  ><span>room / general</span></span
+                  >sala / geral</span
                 >
                 <div
                   class="relative z-10 mt-8 flex items-center gap-2.5 text-[11px]"
@@ -757,7 +714,7 @@
                   <b
                     class="grid h-[27px] w-[27px] place-items-center rounded-full bg-[#a9bdf4] font-mono text-[9px] text-[#1e2330]"
                     >AA</b
-                  ><span>Real-time systems feel alive.</span>
+                  ><span>Sistemas em tempo real parecem vivos.</span>
                 </div>
                 <div
                   class="relative z-10 mt-2.5 flex items-center gap-2.5 text-[11px] opacity-55"
@@ -765,25 +722,25 @@
                   <b
                     class="grid h-[27px] w-[27px] place-items-center rounded-full bg-copy font-mono text-[9px] text-[#1e2330]"
                     >MK</b
-                  ><span>That is the point.</span>
+                  ><span>Essa é a ideia.</span>
                 </div>
                 <span
                   class="relative z-10 mt-auto font-mono text-[10px] text-signal-soft"
-                  ><span>someone is typing...</span></span
+                  >alguém está digitando...</span
                 >
               </div>
               <div class="p-6">
                 <div class="project-meta">
-                  <span>Public build</span><span>Real-time web</span>
+                  <span>Projeto público</span><span>Web em tempo real</span>
                 </div>
                 <h3
                   class="mb-2 font-display text-[clamp(1.6rem,4vw,2.25rem)] leading-[1.05] tracking-[-0.045em]"
                 >
-                  Real-Time Room Messaging Platform
+                  Plataforma de Mensagens em Tempo Real
                 </h3>
                 <p class="mb-5 min-h-[50px] text-sm text-copy">
-                  A room-based messaging platform with persistent messages,
-                  unread states, and live updates.
+                  Uma plataforma de mensagens em salas com mensagens
+                  persistentes, estados de não lidas e atualizações ao vivo.
                 </p>
                 <div class="mb-6 flex flex-wrap gap-2">
                   <span class="tag">React</span
@@ -792,8 +749,7 @@
                   ><span class="tag">Socket.IO</span>
                 </div>
                 <span class="project-action"
-                  ><span>View project</span>
-                  <span aria-hidden="true">↗</span></span
+                  >Ver projeto <span aria-hidden="true">↗</span></span
                 >
               </div>
             </button>
@@ -809,12 +765,12 @@
           class="site-shell grid grid-cols-1 gap-10 py-12 md:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] md:items-start md:gap-16 md:py-16"
         >
           <div>
-            <p class="eyebrow">how I work</p>
+            <p class="eyebrow">como trabalho</p>
             <h2
               class="mb-0 max-w-[420px] font-display text-[clamp(2rem,5vw,3.6rem)] leading-[0.98] tracking-[-0.06em]"
               id="approach-title"
             >
-              <span>From workflow to system.</span>
+              Do fluxo ao sistema.
             </h2>
           </div>
           <div
@@ -824,10 +780,10 @@
               <p
                 class="mb-3 font-mono text-[10px] uppercase tracking-[0.08em] text-signal-soft"
               >
-                understand the workflow
+                entender o fluxo
               </p>
               <p class="mb-0 text-[13px] text-muted">
-                Start with roles, rules, and friction, not screens.
+                Começo por papéis, regras e atritos, não pelas telas.
               </p>
             </div>
             <div
@@ -836,21 +792,21 @@
               <p
                 class="mb-3 font-mono text-[10px] uppercase tracking-[0.08em] text-signal-soft"
               >
-                connect the system
+                conectar o sistema
               </p>
               <p class="mb-0 text-[13px] text-muted">
-                Bring interface, API, data, and integrations into one flow.
+                Uno interface, API, dados e integrações em um único fluxo.
               </p>
             </div>
             <div class="py-5 md:py-0 md:pl-6">
               <p
                 class="mb-3 font-mono text-[10px] uppercase tracking-[0.08em] text-signal-soft"
               >
-                reduce repetition
+                reduzir repetição
               </p>
               <p class="mb-0 text-[13px] text-muted">
-                Automate recurring work and leave the operation easier to
-                maintain.
+                Automatizo o que é recorrente e deixo a operação mais fácil de
+                manter.
               </p>
             </div>
           </div>
@@ -863,12 +819,12 @@
         aria-labelledby="about-title"
       >
         <div class="mb-8 md:mb-11">
-          <p class="eyebrow">about me</p>
+          <p class="eyebrow">sobre mim</p>
           <h2
             class="mb-0 max-w-[650px] font-display text-[clamp(2.25rem,7vw,4.3rem)] leading-[0.98] tracking-[-0.06em]"
             id="about-title"
           >
-            <span>Software with a reason to exist.</span>
+            Software com um motivo para existir.
           </h2>
         </div>
         <div
@@ -878,55 +834,47 @@
             <p
               class="mb-5 font-display text-[clamp(1.5rem,3vw,2.1rem)] leading-[1.13] tracking-[-0.04em] text-ink"
             >
-              <span>I am Asafe Alves, a full-stack developer</span>
+              Sou Asafe Alves, desenvolvedor full-stack
             </p>
             <p class="mb-5">
-              <span
-                >I work across product interfaces, backend services, relational
-                data, and the integrations that connect software to everyday
-                operations.</span
-              >
+              Trabalho com interfaces de produto, serviços backend, dados
+              relacionais e integrações que conectam software às operações do
+              dia a dia.
             </p>
             <p>
-              <span
-                >My best work lives where a messy process becomes a clear
-                system: a portal, an API, an automation, or a small interaction
-                that removes friction.</span
-              >
+              Meu melhor trabalho acontece quando um processo confuso se
+              transforma em um sistema claro: um portal, uma API, uma automação
+              ou uma pequena interação que remove atrito.
             </p>
           </div>
-          <div class="border-t border-line" aria-label="Capabilities">
+          <div class="border-t border-line" aria-label="Competências">
             <div
               class="grid grid-cols-[38px_1fr] gap-x-3 border-b border-line py-[19px]"
             >
-              ><strong class="font-display text-lg">Product platforms</strong>
+              ><strong class="font-display text-lg"
+                >Plataformas de produto</strong
+              >
               <p class="col-start-2 mt-1 text-[13px] text-muted">
-                <span
-                  >Client-facing flows, dashboards, portals, and admin
-                  tools.</span
-                >
+                Fluxos para clientes, dashboards, portais e ferramentas
+                administrativas.
               </p>
             </div>
             <div
               class="grid grid-cols-[38px_1fr] gap-x-3 border-b border-line py-[19px]"
             >
-              ><strong class="font-display text-lg">Backend &amp; APIs</strong>
+              ><strong class="font-display text-lg">Backend e APIs</strong>
               <p class="col-start-2 mt-1 text-[13px] text-muted">
-                <span
-                  >Authentication, data models, integrations, and reliable
-                  service boundaries.</span
-                >
+                Autenticação, modelos de dados, integrações e limites de serviço
+                confiáveis.
               </p>
             </div>
             <div
               class="grid grid-cols-[38px_1fr] gap-x-3 border-b border-line py-[19px]"
             >
-              ><strong class="font-display text-lg">Automation</strong>
+              ><strong class="font-display text-lg">Automação</strong>
               <p class="col-start-2 mt-1 text-[13px] text-muted">
-                <span
-                  >Operational workflows that connect people, documents,
-                  payments, and messages.</span
-                >
+                Fluxos operacionais que conectam pessoas, documentos, pagamentos
+                e mensagens.
               </p>
             </div>
           </div>
@@ -942,25 +890,23 @@
           class="flex flex-col justify-between gap-8 rounded-[14px] border border-line bg-gradient-to-br from-signal/10 to-transparent p-7 sm:p-12 lg:flex-row lg:items-end"
         >
           <div>
-            <p class="eyebrow">contact</p>
+            <p class="eyebrow">contato</p>
             <h2
               class="mb-3 max-w-[620px] font-display text-[clamp(2.25rem,7vw,4.3rem)] leading-[0.98] tracking-[-0.06em]"
               id="contact-title"
             >
-              <span>Have a useful problem to solve?</span>
+              Tem um problema útil para resolver?
             </h2>
             <p class="mb-0 text-copy">
-              <span
-                >Tell me what you are building, improving, or trying to
-                understand.</span
-              >
+              Conte-me o que você está construindo, melhorando ou tentando
+              entender.
             </p>
           </div>
           <div
             class="flex min-w-0 flex-col items-start gap-[18px] lg:min-w-[310px] lg:max-w-[360px]"
           >
             <p class="font-mono text-[10px] uppercase tracking-[0.08em] text-muted">
-              direct channel
+              canal direto
             </p>
             <a
               class="button button-primary max-w-full text-[10px] sm:text-xs"
@@ -971,7 +917,7 @@
             <div
               class="flex flex-wrap gap-x-5 gap-y-2 font-mono text-[11px] text-muted"
               role="group"
-              aria-label="Social links"
+              aria-label="Redes sociais"
             >
               <a
                 class="transition hover:text-signal-soft"
@@ -995,8 +941,8 @@
     <footer
       class="site-shell flex flex-col gap-1 border-t border-line py-[22px] pb-[34px] font-mono text-[10px] tracking-[0.04em] text-muted sm:flex-row sm:justify-between sm:gap-0"
     >
-      <span>© <span id="current-year">2026</span> Asafe Alves</span>
-      <span>Built with care, not noise.</span>
+      <span>© <span id="current-year">2026</span> Asafe Alves</span
+      ><span>Feito com cuidado, sem ruído.</span>
     </footer>
 
     <dialog
@@ -1010,18 +956,18 @@
           class="flex items-start justify-between gap-6 border-b border-line pb-6"
         >
           <div>
-            <p class="eyebrow" id="dialog-meta">Case study</p>
+            <p class="eyebrow" id="dialog-meta">Estudo de caso</p>
             <h2
               class="mb-0 font-display text-[clamp(2rem,8vw,3.2rem)] leading-[0.98] tracking-[-0.06em]"
               id="dialog-title"
             >
-              <span>Project details</span>
+              Detalhes do projeto
             </h2>
           </div>
           <button
             class="dialog-close"
             type="button"
-            aria-label="Close project details"
+            aria-label="Fechar detalhes do projeto"
           >
             ×
           </button>
@@ -1034,18 +980,18 @@
             <div
               class="min-h-[84px] rounded-lg border border-line bg-canvas/35 p-[13px]"
             >
-              <span>Contribution</span
+              <span>Contribuição</span
               ><strong id="dialog-contribution"></strong>
             </div>
             <div
               class="min-h-[84px] rounded-lg border border-line bg-canvas/35 p-[13px]"
             >
-              <span>Stack</span><strong id="dialog-stack"></strong>
+              <span>Tecnologias</span><strong id="dialog-stack"></strong>
             </div>
             <div
               class="min-h-[84px] rounded-lg border border-line bg-canvas/35 p-[13px]"
             >
-              <span>Access</span><strong id="dialog-access"></strong>
+              <span>Acesso</span><strong id="dialog-access"></strong>
             </div>
           </div>
           <a
@@ -1054,7 +1000,7 @@
             href="#"
             target="_blank"
             rel="noreferrer"
-            ><span>Open project</span> <span aria-hidden="true">↗</span></a
+            >Abrir projeto <span aria-hidden="true">↗</span></a
           >
         </div>
       </div>
